@@ -2,10 +2,11 @@
 
 class Controller_Osu0413 extends Fuel\Core\Controller
 {
-    public static function action_index()
+    public static function action_index($text = 'good-morning')
     {
         $data = array();
         $data['title'] = '2013年4月13日（土曜日）';
+        $data['text'] = $text;
         return View::forge('osu0413', $data);
     }
 }
